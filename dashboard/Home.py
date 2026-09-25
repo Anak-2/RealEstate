@@ -58,7 +58,7 @@ for apt in apartments:
     rows.append({"단지": apt.name, "관심 면적군": f"{area:.1f}㎡", "최근 실거래": stats.latest_price / 100_000_000 if stats.latest_price else None, "12개월 평균": stats.avg_12m / 100_000_000 if stats.avg_12m else None, "24개월 고점 대비": stats.drawdown_from_24m_high, "최근 3개월 거래": stats.volume_3m, "직전 3개월 거래": stats.previous_volume_3m, "여의도(분)": apt.yeouido_commute_min})
 if rows:
     df = pd.DataFrame(rows)
-    st.dataframe(df, width='stretch', hide_index=True, column_config={"최근 실거래": st.column_config.NumberColumn(format="%.2f억"), "12개월 평균": st.column_config.NumberColumn(format="%.2f억"), "24개월 고점 대비": st.column_config.NumberColumn(format="%.1%%")})
+    st.dataframe(df, width='stretch', hide_index=True, column_config={"최근 실거래": st.column_config.NumberColumn(format="%.2f억"), "12개월 평균": st.column_config.NumberColumn(format="%.2f억"), "24개월 고점 대비": st.column_config.NumberColumn(format="percent")})
 else:
     st.info("아직 등록된 관심 단지가 없습니다. 왼쪽 메뉴의 Watchlist에서 단지를 추가하세요.")
 

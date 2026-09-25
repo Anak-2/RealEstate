@@ -1,6 +1,20 @@
 # Real Estate Radar
 
+![Python](https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![SQLite](https://img.shields.io/badge/DB-SQLite-07405E?logo=sqlite&logoColor=white)
+![Data source](https://img.shields.io/badge/data-MOLIT%20실거래가%20OpenAPI-2E7D32)
+![No investment advice](https://img.shields.io/badge/투자%20권유%20아님-개인용%20의사결정%20지원-lightgrey)
+
 여의도 출퇴근권 관심 단지의 국토교통부 아파트 매매 실거래를 모으고, 가격·거래량 지표와 사용자 매수 가능 금액을 한 화면에서 비교하는 개인용 의사결정 지원 도구입니다. 가격 상승을 예측하거나 매수 결정을 자동화하지 않습니다.
+
+## 화면
+
+| Home | Watchlist | Apartment 상세 |
+| --- | --- | --- |
+| ![Home](docs/screenshots/home.jpg) | ![Watchlist](docs/screenshots/watchlist.jpg) | ![Apartment](docs/screenshots/apartment.jpg) |
+
+*(스크린샷은 예시로 만든 가상의 단지·가격 데이터입니다. 실제 서비스 데이터가 아닙니다.)*
 
 ## 빠른 시작 (터미널 없이)
 
